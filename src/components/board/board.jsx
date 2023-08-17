@@ -1,9 +1,9 @@
 import { useEffect, useState, useRef } from 'react'
 import Spinner from 'react-bootstrap/Spinner'
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Confetti from 'react-confetti';
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import Confetti from 'react-confetti'
 import PropTypes from 'prop-types'
 
 import Item from '../item/item'

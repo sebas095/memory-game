@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import RainbowText from 'react-rainbow-text'
 import Menu from '../menu/menu'
 import Board from '../board/board'
 import './app.css'
@@ -8,7 +9,9 @@ const App = () => {
 
   return (
     <> 
-      <h1>Juego de Memoria</h1>
+      <h1>
+        <RainbowText lightness={0.4} saturation={1}>Juego de Memoria</RainbowText>
+      </h1>
       {!startGame ? <Menu setStartGame={setStartGame}/> : <Board setStartGame={setStartGame}/>}
     </>
   )

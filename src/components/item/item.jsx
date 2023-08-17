@@ -5,8 +5,16 @@ import './item.css'
 
 const Item = ({ name, url, hidden = true, onClick }) => {
   return (
-    <Card className="mb-4 p-0 border-0" onClick={onClick}>
-      <Card.Img className="item__img" alt={hidden ? 'card-background' : name} src={hidden ? cardBackground : url}/>
+    <Card className={`mb-4 p-0 border-0 item__container ${!hidden ? "item__container--flipped" : ""}`} onClick={onClick}>
+      {hidden ? (
+        <div className="item__face">
+          <Card.Img className="item__img" alt="card-background" src={cardBackground}/>
+        </div>
+      ) : (
+        <div className="item__face item__face--back">
+          <Card.Img className="item__img" alt={name} src={url}/>
+        </div>
+      )}
     </Card>
   )
 }
