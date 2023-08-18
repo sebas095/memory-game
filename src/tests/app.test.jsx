@@ -6,7 +6,6 @@ import dataResponse from './data.mock.js'
 const USERNAME_KEY = 'username'
 const USERNAME_VALUE = 'test'
 window.fetch = vi.fn()
-window.HTMLFormElement.prototype.submit = () => {}
 
 const createFetchResponse = (data) => {
   return { json: () => new Promise(resolve => resolve(data)) }
