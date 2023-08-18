@@ -21,6 +21,12 @@ Pequeña aplicación del clásico juego de memoria.
   npm run dev
 ```
 
+### 🗒️ Ejecutar tests
+
+```bash
+  npm run test
+```
+
 - Corriendo en http://localhost:5173
 
 ## 🔗 Despliegue
