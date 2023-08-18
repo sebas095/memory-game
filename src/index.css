@@ -14,12 +14,6 @@
   -webkit-text-size-adjust: 100%;
 }
 
-#root {
-  border-radius: 10px;
-  border: 4px dotted;
-
-}
-
 body {
   margin: 0;
   display: flex;

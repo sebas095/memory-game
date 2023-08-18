@@ -49,7 +49,7 @@ const Menu = ({ setStartGame }) => {
       >
         <Modal.Body>
           <h2 className="text-center pb-3">Bienvenido</h2>
-          <Form noValidate validated={validated} onSubmit={handleSubmit}>
+          <Form noValidate validated={validated} onSubmit={handleSubmit} role="form">
             <Row className="justify-content-center">
               <Col xs={12} md={10}>
                 <Form.Control
@@ -59,6 +59,7 @@ const Menu = ({ setStartGame }) => {
                   value={username}
                   onChange={handleUserChange}
                   autoFocus
+                  data-testid="username"
                 />
                 <Form.Control.Feedback type="invalid">
                   Por favor ingresa un nombre de usuario
@@ -67,7 +68,7 @@ const Menu = ({ setStartGame }) => {
             </Row>
 
             <div className="d-flex justify-content-center pt-4">
-              <Button variant="primary" type="submit" size="lg" aria-label="Comenzar">Comenzar</Button>
+              <Button variant="primary" type="submit" size="lg" aria-label="Comenzar" role="button">Comenzar</Button>
             </div>
           </Form>
         </Modal.Body>
@@ -77,7 +78,7 @@ const Menu = ({ setStartGame }) => {
 
   return (
     <div className="pt-5">
-      <Button className="menu__button" variant="success" onClick={play} size="lg" aria-label="Jugar">Jugar</Button>
+      <Button className="menu__button" variant="success" onClick={play} size="lg" aria-label="Jugar" role="button">Jugar</Button>
     </div>
   )
 }

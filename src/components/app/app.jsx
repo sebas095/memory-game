@@ -9,7 +9,7 @@ const App = () => {
 
   return (
     <> 
-      <h1>
+      <h1 data-testid="title">
         <RainbowText lightness={0.4} saturation={1}>Juego de Memoria</RainbowText>
       </h1>
       {!startGame ? <Menu setStartGame={setStartGame}/> : <Board setStartGame={setStartGame}/>}

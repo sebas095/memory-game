@@ -13,7 +13,7 @@ const CongratulationModal = ({ show, onHide, username }) => {
       <Modal.Body>
         <p className="text-center pt-3 fs-5">Felicitaciones {username} has terminado el juego!</p>
         <div className="d-flex justify-content-center pt-4">
-          <Button variant="primary" onClick={onHide} size="lg" aria-label="Ir al inicio">Ir al inicio</Button>
+          <Button variant="primary" onClick={onHide} size="lg" aria-label="Ir al inicio" role="button">Ir al inicio</Button>
         </div>
       </Modal.Body>
     </Modal>
